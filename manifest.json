@@ -1,0 +1,20 @@
+{
+  "name": "Media Asset Export",
+  "description": "Export media assets from published content items using YeSQL indexing",
+  "author": "Teo Gamarra",
+  "website": "https://github.com/eberteogam/MediaAssetExport",
+  "version": "1.0.0",
+  "orchard.core": {
+    "type": "Module"
+  },
+  "features": [
+    {
+      "id": "MediaAssetExport",
+      "name": "Media Asset Export",
+      "description": "Core media asset indexing and export functionality",
+      "category": "Content",
+      "priority": 0,
+      "dependencies": ["OrchardCore.ContentTypes"]
+    }
+  ]
+}
