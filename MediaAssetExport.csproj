@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackageId>TeoGamarra.MediaAssetExport</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Teo Gamarra</Authors>
+    <Description>An Orchard Core module that indexes and exports media asset URLs from published content items using YeSQL indexing. Provides a REST API and injectable service for querying media assets by content item or content type.</Description>
+    <PackageTags>OrchardCore;module;media;assets;export;YeSQL</PackageTags>
+    <PackageProjectUrl>https://github.com/eberteogam/MediaAssetExport</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/eberteogam/MediaAssetExport</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <NoWarn>NU5129</NoWarn>
+    <Copyright>Copyright © 2026 Teo Gamarra</Copyright>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.ContentManagement" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Data" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Data.YesSql.Abstractions" Version="2.2.1" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="2.2.1" />
+    <PackageReference Include="YesSql.Core" Version="5.4.7" />
+  </ItemGroup>
+
+</Project>
