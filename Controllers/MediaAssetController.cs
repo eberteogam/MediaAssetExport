@@ -14,6 +14,9 @@ namespace TeoGamarra.MediaAssetExport.Controllers
     {
         private readonly IMediaAssetService _mediaAssetService;
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="MediaAssetController"/>.
+        /// </summary>
         public MediaAssetController(IMediaAssetService mediaAssetService)
         {
             _mediaAssetService = mediaAssetService;

@@ -10,12 +10,12 @@ namespace TeoGamarra.MediaAssetExport.Indexes
         /// <summary>
         /// Content item ID that contains this media asset.
         /// </summary>
-        public string ContentItemId { get; set; }
+        public required string ContentItemId { get; set; }
 
         /// <summary>
         /// Media asset URL reference.
         /// </summary>
-        public string MediaUrl { get; set; }
+        public required string MediaUrl { get; set; }
 
         /// <summary>
         /// Whether the parent content item is published.
@@ -25,6 +25,6 @@ namespace TeoGamarra.MediaAssetExport.Indexes
         /// <summary>
         /// Content type of the parent item.
         /// </summary>
-        public string ContentType { get; set; }
+        public required string ContentType { get; set; }
     }
 }

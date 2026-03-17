@@ -2,3 +2,8 @@ bin/
 obj/
 *.user
 .vs/
+
+# NuGet packages produced by dotnet pack
+*.nupkg
+*.snupkg
+nupkgs/

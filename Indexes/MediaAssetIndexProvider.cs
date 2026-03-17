@@ -16,11 +16,17 @@ namespace TeoGamarra.MediaAssetExport.Indexes
     {
         private readonly ILogger<MediaAssetIndexProvider> _logger;
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="MediaAssetIndexProvider"/>.
+        /// </summary>
         public MediaAssetIndexProvider(ILogger<MediaAssetIndexProvider> logger)
         {
             _logger = logger;
         }
 
+        /// <summary>
+        /// Describes how <see cref="MediaAssetIndex"/> entries are mapped from <see cref="ContentItem"/> documents.
+        /// </summary>
         public override void Describe(DescribeContext<ContentItem> context)
         {
             context.For<MediaAssetIndex>()

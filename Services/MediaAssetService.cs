@@ -13,6 +13,9 @@ namespace TeoGamarra.MediaAssetExport.Services
     {
         private readonly ISession _session;
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="MediaAssetService"/>.
+        /// </summary>
         public MediaAssetService(ISession session)
         {
             _session = session;
